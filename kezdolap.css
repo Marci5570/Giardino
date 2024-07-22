@@ -125,7 +125,7 @@ nav ul li a {
 
 .szolgaltatas h2 {
   color: #d2ba87;
-  font-size: 3.5rem;
+  font-size: 50px;
   padding: 3%;
   text-align: left;
 }
@@ -226,6 +226,40 @@ nav ul li a {
   filter: brightness(100%);
 }
 
+/*Rolunk-----------------------------------------------------------*/
+
+.rolunk {
+  display: flex;
+  align-items: center;
+  background: url(kepek/fu.jpg);
+  background-size: cover;
+  padding: 3%;
+}
+
+.rolunk_text {
+  background-color: hsla(100, 0%, 0%, .5);
+  color: white;
+  padding: 5%;
+  margin-right: 20px;
+  max-width: 60%;
+  flex: 1;
+}
+
+.rolunk h2 {
+  font-size: 50px;
+  margin-bottom: 3%;
+}
+
+.rolunk p {
+  font-size: 25px;
+}
+
+.profil {
+  width: 17%;
+  border-radius: 20px;
+}
+
+
 /*Footer-----------------------------------------------------------*/
 footer ul {
   list-style: none;
@@ -288,10 +322,33 @@ footer i:hover {
     width: calc(100% - 40px);
   }
 
-  .box1, .box2, .box3, .box4, .box5, .box6 {
+  .box1,
+  .box2,
+  .box3,
+  .box4,
+  .box5,
+  .box6 {
     background-size: cover;
   }
-  
+
+  /*rolunk-----------------------------------------------*/
+  .rolunk {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rolunk_text {
+    margin-right: 0;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .profil {
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 10%;
+  }
+
 
   /*footer-----------------------------------------------*/
   .social-icons {
