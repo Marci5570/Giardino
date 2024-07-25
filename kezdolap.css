@@ -1,5 +1,6 @@
 body {
   color: white;
+  background: url(kepek/background.png);
 }
 
 .cover {
@@ -120,7 +121,6 @@ nav ul li a {
 
 .szolgaltatas {
   text-align: center;
-  background: url(kepek/background.png);
 }
 
 .szolgaltatas h2 {
@@ -237,7 +237,7 @@ nav ul li a {
 }
 
 .rolunk_text {
-  background-color: hsla(100, 0%, 0%, .5);
+  background-color: hsla(100, 0%, 0%, .8);
   color: white;
   padding: 5%;
   margin-right: 20px;
@@ -288,7 +288,7 @@ footer i:hover {
   transition: font-size 0.3s
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
 
   /*header--------------------------------------------------------*/
   nav ul {
