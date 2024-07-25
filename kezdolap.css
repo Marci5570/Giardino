@@ -18,7 +18,7 @@ nav {
   top: 0px;
   width: 100%;
   padding: 1%;
-  padding-left: 110%;
+  padding-left: 120%;
   background: hsla(100, 0%, 0%, .5);
   text-align: center;
 }
@@ -84,36 +84,6 @@ nav ul li a {
   left: 0px;
   width: 6%;
   z-index: 1;
-}
-
-
-@media (max-width: 758px) {
-
-  nav ul {
-    display: block;
-  }
-
-  nav {
-    padding: 0;
-    gap: 0;
-  }
-
-  nav li {
-    padding: 3%;
-  }
-
-  .hero-text h1 {
-    font-size: 4em;
-  }
-
-  .hero-text h2 {
-    font-size: 70%;
-  }
-
-  .hero-text {
-    margin-top: 60%;
-    width: 60%;
-  }
 }
 
 
@@ -351,7 +321,13 @@ footer i:hover {
   transition: font-size 0.3s
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 1300px) and (max-width: 1625px) {
+  nav {
+    padding-left: 100%;
+  }
+}
+
+@media (max-width: 1300px) {
 
   /*header--------------------------------------------------------*/
   nav ul {
