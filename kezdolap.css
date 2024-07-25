@@ -167,6 +167,15 @@ nav ul li a {
   color: white;
 }
 
+.box1,
+  .box2,
+  .box3,
+  .box4,
+  .box5,
+  .box6 {
+    background-size: cover;
+  }
+
 .box::after {
   content: '';
   position: absolute;
@@ -361,14 +370,6 @@ footer i:hover {
     width: calc(100% - 40px);
   }
 
-  .box1,
-  .box2,
-  .box3,
-  .box4,
-  .box5,
-  .box6 {
-    background-size: cover;
-  }
 
   /*velemenyek-----------------------------------------------*/
   .velemeny .row {
