@@ -260,6 +260,69 @@ nav ul li a {
 }
 
 
+/*Vélemények-----------------------------------------------------------*/
+
+.velemeny {
+  padding: 40px 0;
+  color: #434343;
+  text-align: center;
+}
+
+.velemeny h1 {
+  font-size: 50px;
+}
+
+.velemeny-inner {
+  max-width: 1500px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.border {
+  width: 60%;
+  height: 3px;
+  background: #d2ba87;
+  margin: 26px auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col {
+  flex: 25%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.comment {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.comment img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.stars {
+  color: #f0932b;
+  margin-bottom: 20px;
+}
+
+
+
 /*Footer-----------------------------------------------------------*/
 footer ul {
   list-style: none;
@@ -331,6 +394,18 @@ footer i:hover {
     background-size: cover;
   }
 
+  /*velemenyek-----------------------------------------------*/
+  .velemeny .row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Térköz a vélemények között */
+  }
+
+  .velemeny .col {
+    flex: 1 1 100%;
+  }
+
   /*rolunk-----------------------------------------------*/
   .rolunk {
     flex-direction: column;
@@ -344,7 +419,7 @@ footer i:hover {
   }
 
   .profil {
-    width: 70%;
+    width: 50%;
     margin-top: 20px;
     margin-bottom: 10%;
   }
