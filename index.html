@@ -18,6 +18,7 @@
 
 <body>
   <header class="cover">
+    
     <div class="logo">
       <img src="kepek/insta.png" alt="logo">
     </div>
@@ -37,6 +38,11 @@
       <h1>Bello Giardino</h1>
       <a href="" class="header-btn">Tekintsd Meg Munkáinkat</a>
     </div>
+
+    <video autoplay muted loop playsinline class="video-bg">
+      <source src="kepek/fooldal_bg.mp4" type="video/mp4">
+      A böngésződ nem támogatja a videó lejátszást.
+    </video>
   </header>
 
   <main>
@@ -86,7 +92,7 @@
           <div class="col">
             <div class="comment">
               <img
-                src="https://images.pexels.com/photos/3211476/pexels-photo-3211476.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                src="kepek/comm2.jpg"
                 alt="">
               <div class="name">John Waddrob</div>
               <div class="stars">
@@ -104,7 +110,7 @@
           <div class="col">
             <div class="comment">
               <img
-                src="https://images.pexels.com/photos/3211476/pexels-photo-3211476.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                src="kepek/comm3.jpg"
                 alt="">
               <div class="name">John Waddrob</div>
               <div class="stars">
@@ -122,7 +128,7 @@
           <div class="col">
             <div class="comment">
               <img
-                src="https://images.pexels.com/photos/3211476/pexels-photo-3211476.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                src="kepek/comm5.jpg"
                 alt="">
               <div class="name">John Waddrob</div>
               <div class="stars">
@@ -140,7 +146,7 @@
           <div class="col">
             <div class="comment">
               <img
-                src="https://images.pexels.com/photos/3211476/pexels-photo-3211476.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                src="kepek/comm.jpg"
                 alt="">
               <div class="name">John Waddrob</div>
               <div class="stars">
@@ -159,6 +165,30 @@
         </div>
       </div>
     </div>
+
+    <section class="dev-section">
+      <div class="section-content">
+        <div class="counter-container">
+          <div class="counter-item">
+            <i class="icon fas fa-users"></i>
+            <div id="counter1" class="counter">0</div>
+          </div>
+          <div class="counter-item">
+            <i class="icon fas fa-cogs"></i>
+            <div id="counter2" class="counter">0</div>
+          </div>
+          <div class="counter-item">
+            <i class="icon fas fa-heart"></i>
+            <div id="counter3" class="counter">0</div>
+          </div>
+          <div class="counter-item">
+            <i class="icon fas fa-trophy"></i>
+            <div id="counter4" class="counter">0</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
 
   </main>
 
@@ -179,3 +209,40 @@
 </body>
 
 </html>
+
+
+<script>
+
+  // A számlálók
+const counters = [
+{ id: "counter1", target: 1130, speed: 3000 },
+{ id: "counter2", target: 511, speed: 3000 },
+{ id: "counter3", target: 320, speed: 3000 },
+{ id: "counter4", target: 764, speed: 3000 },
+];
+
+// Az animációs funkció
+function animateCounter(counterId, target, speed) {
+const counter = document.getElementById(counterId);
+let current = 0;
+const increment = target / (speed / 100);
+
+const interval = setInterval(() => {
+  current += increment;
+  counter.textContent = Math.floor(current);
+
+  if (current >= target) {
+    clearInterval(interval);
+    counter.textContent = target;
+  }
+}, 100);
+}
+
+// Az animációk elindítása
+window.addEventListener('DOMContentLoaded', () => {
+counters.forEach(counter => {
+  animateCounter(counter.id, counter.target, counter.speed);
+});
+});
+
+</script>

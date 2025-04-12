@@ -6,11 +6,21 @@ body {
 .cover {
   position: relative;
   height: 100vh;
-  background: url(kepek/hatter2.jpg) no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  z-index: 1;
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -5;
 }
 
 nav {
@@ -210,8 +220,9 @@ nav ul li a {
 .rolunk {
   display: flex;
   align-items: center;
-  background: url(kepek/fu.jpg);
+  background: url(kepek/fu.jpg) center;
   background-size: cover;
+  background-attachment: fixed;
   padding: 3%;
 }
 
@@ -284,8 +295,8 @@ nav ul li a {
 }
 
 .comment img {
-  width: 100px;
-  height: 100px;
+  max-width: 150px;
+  height: 130px;
   border-radius: 50%;
 }
 
@@ -299,6 +310,48 @@ nav ul li a {
   color: #f0932b;
   margin-bottom: 20px;
 }
+/*Devider-----------------------------------------------------------*/
+
+.dev-section {
+  height: 50vh;
+  background-image: url(kepek/sunset.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center; /* Függőleges középre igazítás */
+  justify-content: center; /* Vízszintes középre igazítás */
+  text-align: center;
+  color: white;
+}
+
+.counter-container {
+  display: flex;
+  justify-content: space-between; /* Szélesség elosztása */
+  width: 80%;
+  max-width: 1200px;
+  gap: 170px; /* Térköz a számlálók között */
+}
+
+.counter-item {
+  text-align: center;
+  flex: 1; /* Rugalmas elrendezés, hogy az elemek szépen eloszoljanak */
+}
+
+.counter {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.icon {
+  font-size: 3rem;
+  color: #fff;
+}
+
+
+
 
 
 
@@ -313,7 +366,7 @@ footer li {
   display: inline;
   padding: 4%;
   font-size: 2.5rem;
-  color: #d2ba87;
+  color: rgb(44, 43, 43);
 }
 
 .footer-d {
@@ -321,7 +374,7 @@ footer li {
   width: 100%;
   height: 3rem;
   padding: 0.2rem;
-  background-color: #d2ba87;
+  background: rgb(44, 43, 43);
 }
 
 footer i:hover {
